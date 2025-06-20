@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo__header {
+    font-style: oblique;
+    font-size: 1.5rem;
+}
+
+.header__list .nav-link{
+    margin-left: 30px;
+}
+
+.submenu {
+    margin-bottom: 0.5rem;
+}
+
+.navbar__img img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+    /*=== SECCION === */
+
+/* SECCION SIN IMAGENES */
+.seccion__novedades {
+    margin: 0;
+    padding: 0;
+}
+
+.container__seccion {
+    width: 100%;
+    max-width: 100%; /* Para no limitar el ancho*/
+    margin: 0;
+    padding: 0;
+}
+
+.seccion__novedades .row{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.seccion__novedades .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px; /* para separar de la img */
+}
+
+.seccion__novedades h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.seccion__novedades p {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+/* Carisel e imagen */
+.seccion__novedades img{
+    width: 100%;
+    height: 60vh /* Para que se me adapte la pantalla*/;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+/* SEECCION DE TODOS LOS ANILLOS */
+.catalogo {
+    padding: 40px 20px;
+}
+
+.buscador {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscador input {
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.imagen {
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 170px;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.imagen:hover img {
+    transform: scale(1.08);
+}
+
+
+
+/* Responsive: columnas en stack para móvil */
+@media (max-width: 768px) {
+  .seccion__novedades .row {
+    flex-direction: column-reverse;
+  }
+
+  .seccion__novedades {
+    padding: 30px 15px;
+  }
+}
