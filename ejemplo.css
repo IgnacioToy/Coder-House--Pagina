@@ -1,0 +1,23 @@
+.footer a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer i {
+  font-size: 22px;
+  color: #333;
+  transition: 0.2s;
+}
+
+.footer i:hover {
+  color: #25D366; /* Verde WhatsApp o podés usar #e1306c para Instagram */
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+}
