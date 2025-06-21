@@ -5,6 +5,14 @@
     font-size: 1rem;
 }
 
+body {
+    background-color: #faf2e6;
+}
+
+.navbar {
+  background-color: #faf2e6 !important;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
