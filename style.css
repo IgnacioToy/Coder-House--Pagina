@@ -131,6 +131,20 @@ body {
     cursor: pointer;
 }
 
+.tarjeta-producto .precio{
+    text-align: center;
+}
+
+.tarjeta-producto h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.tarjeta-producto .descripcion {
+    text-align: center;
+    color: #333;
+}
+
 .tarjeta-producto:hover {
     transform: scale(1.02);
 }
