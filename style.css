@@ -1,3 +1,9 @@
+:root{
+    --color__principal: #faf2e6;
+    --titulo__color : 
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -58,6 +64,7 @@ body {
     width: 100%;
     max-width: 100%; /* Para no limitar el ancho*/
     margin: 0;
+    margin-bottom: 10px;
     padding: 0;
 }
 
@@ -82,7 +89,7 @@ body {
 
 .seccion__novedades p {
     font-size: 1rem;
-    color: #333;
+    color: #333a33;
 }
 
 
@@ -96,7 +103,7 @@ body {
 
 /* SEECCION DE TODOS LOS ANILLOS */
 .catalogo {
-    padding: 40px 20px;
+    padding: 10px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -106,30 +113,28 @@ body {
     margin-bottom: 10px;
 }
 
-.buscador input {
-    padding: 10px 15px;
-    font-size: 16px;
-    max-width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
 /* Galeria en grid */
 .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    padding: 30px;
 }
 
 /* Tarjeta del producto */
 .tarjeta-producto {
-    background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    padding-bottom: 10px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
+    width: 30%; /* para escritorio */
+    min-width: 250px;
+    background-color: var(--color__principal);
 }
 
 .tarjeta-producto .precio{
@@ -138,10 +143,16 @@ body {
 
 .tarjeta-producto h3 {
     text-align: center;
-    padding: 10px;
+    padding: 9px 0;
+    font-size: 23px;
+    color: #333d;
 }
 
 .tarjeta-producto .descripcion {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     color: #333;
     font-family: Garamond;
@@ -154,7 +165,7 @@ body {
 /* Imagen producto*/
 .tarjeta-producto img {
     width: 100%;
-    height: 200px;
+    min-height: 70%;
     object-fit: cover;
 }
 
@@ -200,5 +211,24 @@ body {
 
   .seccion__novedades {
     padding: 30px 15px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .tarjeta-producto {
+    width: 90%;
+  }
+
+  .seccion__novedades h2 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .seccion__novedades p{
+    font-size: 16px;
+  }
+
+  .tarjeta-producto img {
+    aspect-ratio: 1 / 1;
   }
 }
