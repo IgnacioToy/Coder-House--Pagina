@@ -169,10 +169,8 @@ body {
 /* ================================
    SECCIÓN ANILLOS (PÁGINA anillos.html)
 ==================================*/
-.seccion__titulo__anillos .titulo__de__anillos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.seccion__titulo__anillos {
+    position: relative;
 }
 
 .seccion__titulo__anillos h1 {
