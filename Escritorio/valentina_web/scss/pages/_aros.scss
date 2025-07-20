@@ -1,0 +1,11 @@
+.seccion-doble-imagenes {
+    display: grid;
+
+    .card {
+
+        img {
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+}

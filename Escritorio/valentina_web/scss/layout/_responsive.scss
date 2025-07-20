@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+    .tarjeta-producto {
+        width: 90%;
+    }
+
+    .seccion__novedades .row {
+        flex-direction: column-reverse;
+    }
+
+    .seccion__novedades {
+        padding: 30px 15px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .tarjeta-producto img {
+        aspect-ratio: 1 / 1;
+    }
+
+
+
+
+}

@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+  --color__principal: #fffffff8;
+  --color__texto: #333;
+  --color__pastel: #e6b5b0;
+  --color__logo: rgba(62, 52, 52, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color__principal);
+  font-family: sans-serif;
+  color: var(--color__texto);
+  line-height: 1.6;
+}
+
+.header .navbar {
+  background-color: var(--color__principal) !important;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.header .navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navbar .container .navbar__img img {
+  width: 40px;
+  border-radius: 10px;
+}
+.header .navbar .container .titulo__header {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.header .navbar .header__list .nav-link {
+  margin-left: 30px;
+  font-weight: 500;
+}
+.header .navbar .header__list .submenu {
+  padding: 8px;
+  margin: 3px 0;
+  transition: background-color 0.3s ease;
+}
+.header .navbar .header__list .submenu:hover {
+  background-color: #cecbcb;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+}
+.footer a {
+  color: var(--color__texto);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer i {
+  font-size: 22px;
+  color: var(--color__texto);
+  transition: 0.2s;
+}
+.footer i:hover {
+  color: var(--color__pastel);
+}
+.footer strong {
+  color: var(--color__pastel);
+}
+.footer .footer__img {
+  width: 60px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .tarjeta-producto {
+    width: 90%;
+  }
+  .seccion__novedades .row {
+    flex-direction: column-reverse;
+  }
+  .seccion__novedades {
+    padding: 30px 15px;
+  }
+  h2 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .tarjeta-producto img {
+    aspect-ratio: 1/1;
+  }
+}
+.galeria,
+.galeria__contenedor__producto-global {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 30px;
+}
+
+.tarjeta-producto, .tarjeta-producto-aros, .tarjeta-producto-pulseras, .tarjeta-producto-anillo {
+  background-color: var(--color__principal);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.tarjeta-producto:hover, .tarjeta-producto-aros:hover, .tarjeta-producto-pulseras:hover, .tarjeta-producto-anillo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.tarjeta-producto img, .tarjeta-producto-aros img, .tarjeta-producto-pulseras img, .tarjeta-producto-anillo img {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tarjeta-producto .contenido__tarjeta, .tarjeta-producto-aros .contenido__tarjeta, .tarjeta-producto-pulseras .contenido__tarjeta, .tarjeta-producto-anillo .contenido__tarjeta {
+  padding: 16px;
+  text-align: center;
+}
+.tarjeta-producto h3, .tarjeta-producto-aros h3, .tarjeta-producto-pulseras h3, .tarjeta-producto-anillo h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color__acento);
+}
+.tarjeta-producto .precio, .tarjeta-producto-aros .precio, .tarjeta-producto-pulseras .precio, .tarjeta-producto-anillo .precio {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3c3cbf;
+}
+.tarjeta-producto .descripcion, .tarjeta-producto-aros .descripcion, .tarjeta-producto-pulseras .descripcion, .tarjeta-producto-anillo .descripcion {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.custom-carrusel .carousel-inner img {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.seccion__novedades {
+  margin-top: 10px;
+  padding: 0;
+}
+.seccion__novedades .row {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.seccion__novedades .col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 20px;
+}
+.seccion__novedades h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.seccion__novedades p {
+  font-size: 1rem;
+  color: #333a33;
+}
+.seccion__novedades img {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.anillos__composicion {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  gap: 2rem;
+  padding: 4rem 2rem 4rem 0;
+  align-items: stretch;
+}
+.anillos__composicion .anillos__imagen-izquierda {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: flex-end;
+}
+.anillos__composicion .anillos__imagen-izquierda img {
+  width: 70%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.anillos__composicion .anillos__texto-centro {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+.anillos__composicion .anillos__texto-centro p {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #000;
+  font-family: "Great Vibes", cursive;
+  transform: scaleY(1.6);
+}
+.anillos__composicion .anillos__imagen-derecha {
+  flex: 1;
+  display: flex;
+}
+.anillos__composicion .anillos__imagen-derecha img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.titulo__producto {
+  font-family: "Playfair Display", serif;
+  font-size: 1.9rem;
+  margin: 1.5rem 0 1.5rem 5.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #111;
+  display: flex;
+}
+
+.hero__pulseras-destacado {
+  padding-top: 5rem;
+  background-color: #fff;
+  margin-top: 1rem;
+  padding-bottom: 0;
+}
+.hero__pulseras-destacado .contenedor__hero-destacado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.hero__pulseras-destacado .contenedor__hero-destacado .hero__imagen-grande {
+  flex: auto;
+}
+.hero__pulseras-destacado .contenedor__hero-destacado .hero__imagen-grande img {
+  width: 100%;
+  height: 650px;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-left: 20px;
+  display: block;
+}
+.hero__pulseras-destacado .contenedor__hero-destacado .hero__texto-destacado {
+  flex: 1 1 40%;
+}
+.hero__pulseras-destacado .contenedor__hero-destacado .hero__texto-destacado h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-family: "Lora", serif;
+}
+.hero__pulseras-destacado .contenedor__hero-destacado .hero__texto-destacado p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  font-family: "Lora", serif;
+}
+.hero__pulseras-destacado .contenedor__hero-destacado .hero__texto-destacado .btn-destacado {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #c7a17a;
+  color: #c7a17a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.hero__pulseras-destacado .contenedor__hero-destacado .hero__texto-destacado .btn-destacado:hover {
+  background-color: #c7a17a;
+  color: white;
+}
+
+.galeria__nuevos-articulos {
+  padding: 0 4rem;
+}
+.galeria__nuevos-articulos h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  display: flex;
+  margin-left: 2rem;
+}
+.galeria__nuevos-articulos .contenedor__galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.galeria__nuevos-articulos .articulo__miniatura {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  height: 400px;
+  width: 400px;
+}
+.galeria__nuevos-articulos .articulo__miniatura img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.seccion-doble-imagenes {
+  display: grid;
+}
+.seccion-doble-imagenes .card img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

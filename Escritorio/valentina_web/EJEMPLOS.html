@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulseras | Valentina Bonkovki</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ENCABEZADO FIJO -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top transition-navbar">
+      <div class="container">
+        <a class="navbar-brand navbar__img" href="index.html">
+          <img src="./imagenes/LogoPrincippal.jpeg" alt="Logo">
+        </a>
+        <h1 class="titulo__header">Valentina Bonkovki</h1>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse header__list" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="return false;">Productos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item submenu" href="anillos.html">Anillos</a></li>
+                <li><a class="dropdown-item submenu" href="pulseras.html">Pulseras</a></li>
+                <li><a class="dropdown-item submenu" href="aros.html">Aros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN PRINCIPAL CON IMAGEN Y TEXTO -->
+  <section class="seccion-destacada">
+    <div class="container">
+      <div class="contenido-articulo">
+        <div class="imagen-articulo">
+          <img src="./imagenes/imagen_principal.jpg" alt="Diseño de joyas">
+        </div>
+        <div class="texto-articulo">
+          <h2>CEO: El arte del diseño de joyas - Creatividad y técnica</h2>
+          <p>
+            Nuestra CEO te cuenta sobre el proceso de creación de joyas únicas, destacando la importancia del arte y la habilidad técnica.
+          </p>
+          <a href="#" class="btn-leer">Leer artículo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN NUEVOS ARTÍCULOS -->
+  <section class="nuevos-articulos">
+    <div class="container">
+      <h2>Nuevos artículos</h2>
+      <div class="galeria-articulos">
+        <div class="articulo-miniatura">
+          <img src="./imagenes/articulo1.jpg" alt="Aros dorados">
+        </div>
+        <div class="articulo-miniatura">
+          <img src="./imagenes/articulo2.jpg" alt="Anillos modernos">
+        </div>
+        <div class="articulo-miniatura">
+          <img src="./imagenes/articulo3.jpg" alt="Mano con joyas">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

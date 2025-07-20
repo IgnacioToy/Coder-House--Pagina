@@ -1,0 +1,45 @@
+.header {
+
+    .navbar {
+        background-color: var(--color__principal)!important;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .navbar__img img {
+                width: 40px;
+                border-radius: 10px;
+            }
+
+            .titulo__header {
+                font-style: italic;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+        }
+
+        .header__list {
+
+            .nav-link {
+                margin-left: 30px;
+                font-weight: 500;
+            }
+
+            .submenu {
+                padding:8px;
+                margin: 3px 0;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #cecbcb;
+                }
+            }
+        }
+    }
+}

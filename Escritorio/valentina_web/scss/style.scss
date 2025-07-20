@@ -1,0 +1,16 @@
+@use 'base/variables';
+@use 'base/reset';
+@use 'base/global';
+
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/responsive';
+@use 'layout/triple_layout';
+
+@use 'components/cards';
+@use 'components/carousel';
+
+@use 'pages/home';
+@use 'pages/anillos';
+@use 'pages/pulseras';
+@use 'pages/aros';
