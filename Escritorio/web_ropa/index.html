@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda Online</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Tu CSS compilado -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="encabezado__tienda">
+
+    <!-- Barra superior -->
+    <div class="bara__superior d-flex justify-content-between align-items-center p-3">
+      
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="./imagenes/logo.jpg" alt="logo" height="40">
+        </a>
+      </div>
+
+      <!-- Íconos de usuario -->
+      <div class="menu__usuario d-flex align-items-center gap-3">
+        <a href="/favoritos.html" title="Favoritos"><i class="bi bi-heart fs-5"></i></a>
+
+        <a href="/carrito.html" class="position-relative" title="Carrito">
+          <i class="bi bi-cart fs-5"></i>
+          <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+          </span>
+        </a>
+
+        <button class="btn p-0 border-0" title="Buscar">
+          <i class="bi bi-search fs-5"></i>
+        </button>
+
+        <button id="menu-toggle" class="btn p-0 border-0 d-md-none" title="Menú">
+          <i class="bi bi-list fs-3"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Barra de búsqueda -->
+    <div class="barra__busqueda px-3 pb-3 d-none d-md-flex">
+      <input type="text" class="form-control me-2" placeholder="Buscar productos..." aria-label="Buscar">
+      <button type="submit" class="btn btn-dark">Buscar</button>
+    </div>
+
+    <!-- Navegación principal (desplegable en móvil) -->
+    <nav id="menu-principal" class="navegacion__principal bg-light py-2 menu-desplegable d-md-flex d-none">
+      <ul class="categorias__nav d-flex flex-column flex-md-row justify-content-center gap-3 m-0 p-0">
+        <li><a href="/marcas">Marcas</a></li>
+        <li><a href="/actividades">Actividades</a></li>
+        <li><a href="/categorias">Categorías</a></li>
+        <li><a href="/hombre">Hombre</a></li>
+        <li><a href="/mujer">Mujer</a></li>
+        <li><a href="/ninos">Niños</a></li>
+        <li><a href="/ofertas">Ofertas</a></li>
+        <li><a href="/novedades">Novedades</a></li>
+        <li><a href="/exclusivos">Exclusivos</a></li>
+        <li><a href="/destacados">Destacados</a></li>
+      </ul>
+    </nav>
+
+    <!-- Navegación secundaria -->
+    <nav class="navegacion__secundaria bg-body-tertiary py-2">
+      <div class="d-flex flex-wrap justify-content-between px-3">
+        <ul class="d-flex gap-3 m-0">
+          <li><a href="/como__comprar">Cómo comprar</a></li>
+          <li><a href="/envios">Guía de envíos</a></li>
+          <li><a href="/tiendas">Nuestras tiendas</a></li>
+          <li><a href="/estilos">Estilos</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/materiales">Materiales</a></li>
+        </ul>
+
+        <ul class="links__sociales d-flex gap-3 m-0">
+          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- JS del header -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const boton = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu-principal");
+
+      boton.addEventListener("click", () => {
+        menu.classList.toggle("d-none");
+      });
+    });
+  </script>
+
+</body>
+</html>
